@@ -1,5 +1,6 @@
-Camera Management Web Application
-Technical Stack
+𝐂𝐚𝐦𝐞𝐫𝐚 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐖𝐞𝐛 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧
+
+𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐒𝐭𝐚𝐜𝐤
 Frontend Framework: React 18 with TypeScript
 
 Build Tool: Vite
@@ -18,7 +19,7 @@ Data Fetching: TanStack Query (React Query)
 
 HTTP Client: Axios
 
-Project Structure
+𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐒𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞
 bash
 Copy
 Edit
@@ -32,7 +33,7 @@ src/                   # Main source code directory
 ├── config/            # Application configuration  
 ├── lib/               # Utility functions and shared code  
 
-Key Features
+𝐊𝐞𝐲 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
 
 ✅ Modern, responsive UI with Tailwind CSS
 
@@ -49,7 +50,7 @@ Key Features
 ✅ Modular component architecture
 
 
-Development Features
+𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬
 
 🔹 Hot Module Replacement (HMR)
 
@@ -61,7 +62,7 @@ Development Features
 
 🔹 Optimized build configurations for development & production
 
-UI Components
+𝐔𝐈 𝐂𝐨𝐦𝐩𝐨𝐧𝐞𝐧𝐭𝐬
 
 🎨 Pre-built components from Radix UI
 
@@ -80,7 +81,7 @@ UI Components
 🎨 Navigation components
 
 
-Configuration System
+𝐂𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐚𝐭𝐢𝐨𝐧 𝐒𝐲𝐬𝐭𝐞𝐦
 
 🔧 JSON-based configuration for easy customization
 
