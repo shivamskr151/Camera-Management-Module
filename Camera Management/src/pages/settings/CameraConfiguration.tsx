@@ -231,12 +231,12 @@ const CameraTableRow = React.memo(({
                 >
                     Configure
                 </Button>
-                <Button
+                {/* <Button
                     onClick={onDelete}
                     variant="destructive"
                 >
                     Delete
-                </Button>
+                </Button> */}
             </div>
         </TableCell>
     </TableRow>
@@ -315,7 +315,7 @@ const CameraConfiguration: React.FC = () => {
             const newConfig: CameraConfig = {
                 ...tempSelectedCamera,
                 jsonName: `camera_${tempSelectedCamera.id}.json`,
-                config: "{}"
+                config: JSON.stringify(defaultConfig, null, 2)
             };
             setSelectedCamera(newConfig);
             setJsonConfig(newConfig.config);
@@ -391,11 +391,11 @@ const CameraConfiguration: React.FC = () => {
     }, []);
 
     const handleDeleteConfig = useCallback((cameraId: string) => {
-        setCameraConfigs(configs => configs.filter(c => c.id !== cameraId));
-        toast({
-            title: "Success",
-            description: "Camera configuration deleted successfully"
-        });
+        // setCameraConfigs(configs => configs.filter(c => c.id !== cameraId));
+        // toast({
+        //     title: "Success",
+        //     description: "Camera configuration deleted successfully"
+        // });
     }, [toast]);
 
     if (isConfiguring && selectedCamera) {
@@ -466,10 +466,10 @@ const CameraConfiguration: React.FC = () => {
         <div className="container mx-auto py-6 space-y-6">
             <div className="flex justify-between items-center">
                 <div>
-                    <h1 className="text-2xl font-bold tracking-tight">Camera Configurations</h1>
-                    <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold">Camera Configuration</h2>
+                    {/* <p className="text-muted-foreground">
                         Manage and configure your camera settings
-                    </p>
+                    </p> */}
                 </div>
                 <CameraSearch
                     mode="default"

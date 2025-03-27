@@ -1,16 +1,9 @@
-import { BrowserRouter } from "react-router-dom";
-import { AppProviders } from "@/components/providers/AppProviders";
-import { AppInitializer } from "@/components/app/AppInitializer";
-import { AppRouter } from "@/components/app/AppRouter";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { routes } from './routes';
 
-const App = () => (
-  <AppProviders>
-    <BrowserRouter>
-      <AppInitializer>
-        <AppRouter />
-      </AppInitializer>
-    </BrowserRouter>
-  </AppProviders>
-);
+function App() {
+  const router = createBrowserRouter(routes);
+  return <RouterProvider router={router} />;
+}
 
 export default App;

@@ -1,4 +1,3 @@
-
 import { useStoreState } from 'easy-peasy';
 import { StoreModel } from '@/store/model';
 import { LoginCredentials, RegisterCredentials } from '@/lib/types';
@@ -28,6 +27,9 @@ export const useAuth = () => {
     },
     clearError: () => {
       return store.getActions().auth.setError(null);
+    },
+    restoreAuth: () => {
+      return store.getActions().auth.restoreAuth() as Promise<void>;
     },
     
     // For compatibility with the existing code

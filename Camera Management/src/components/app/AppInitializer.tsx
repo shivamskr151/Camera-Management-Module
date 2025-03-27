@@ -12,14 +12,8 @@ export const AppInitializer = ({ children }: AppInitializerProps) => {
       store.getActions().auth.setIsLoading(true);
 
       try {
-        const token = localStorage.getItem('token');
-        if (token) {
-          // Initialize auth state only if there's a token
-          await store.getActions().auth.restoreAuth();
-        } else {
-          // If no token, just set authenticated to false
-          store.getActions().auth.setIsAuthenticated(false);
-        }
+        // Always try to restore auth state
+        await store.getActions().auth.restoreAuth();
       } catch (error) {
         console.error('Failed to restore auth state:', error);
         // Clear auth state on error

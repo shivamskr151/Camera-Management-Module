@@ -218,8 +218,12 @@ export const authModel: AuthModel = {
       
       if (!token) {
         actions.setIsAuthenticated(false);
+        actions.setIsLoading(false);
         return;
       }
+
+      // Set the token in the store
+      actions.setToken(token);
 
       // Verify token with the server
       const response = await post<ApiResponse<{ user: User }>>(
@@ -236,6 +240,8 @@ export const authModel: AuthModel = {
       actions.setIsAuthenticated(false);
       localStorage.removeItem('token');
       localStorage.removeItem('refreshToken');
+    } finally {
+      actions.setIsLoading(false);
     }
   })
 };

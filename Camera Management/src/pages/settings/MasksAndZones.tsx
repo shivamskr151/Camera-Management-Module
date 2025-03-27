@@ -287,7 +287,7 @@ export const MasksAndZones: React.FC<MasksAndZonesProps> = ({ className }) => {
     return (
         <div className={className}>
             <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold">Masks & Zones</h2>
+                <h2 className="text-2xl font-bold">Masks/Zones</h2>
                 <CameraSearch
                     mode="mask"
                     onCameraSelect={handleCameraSelect}
@@ -295,11 +295,16 @@ export const MasksAndZones: React.FC<MasksAndZonesProps> = ({ className }) => {
                 />
             </div>
 
-            {selectedCamera ? (
+            {!selectedCamera ? (
+                <div className="flex flex-col items-center justify-center p-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 border rounded-xl shadow-sm">
+                    <div className="rounded-full p-6 bg-white dark:bg-gray-800 shadow-md mb-6">
+                        <Camera className="h-12 w-12 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <p className="text-xl text-muted-foreground font-medium">Select a Camera</p>
+                    <p className="text-sm text-muted-foreground mt-2">Choose a camera to configure masks and zones</p>
+                </div>
+            ) : (
                 <Card>
-                    <CardHeader>
-                        <CardTitle>Mask/Zones Configuration</CardTitle>
-                    </CardHeader>
                     <CardContent>
                         <div className="space-y-4">
                             <div className="flex flex-col lg:flex-row h-full gap-4">
@@ -486,11 +491,6 @@ export const MasksAndZones: React.FC<MasksAndZonesProps> = ({ className }) => {
                         </div>
                     </CardContent>
                 </Card>
-            ) : (
-                <div className="flex flex-col items-center justify-center h-[400px] text-muted-foreground">
-                    <Camera className="h-12 w-12 mb-4" />
-                    <p>Please select a camera to configure masks and zones</p>
-                </div>
             )}
         </div>
     );

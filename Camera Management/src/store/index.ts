@@ -11,7 +11,7 @@ const store = createStore<StoreModel>(
     },
     {
       storage: 'localStorage',
-      allow: ['theme', 'cameraConfig'], // Persist theme and camera config in localStorage
+      allow: ['auth', 'theme', 'cameraConfig'], // Persist auth, theme and camera config in localStorage
     }
   )
 );
