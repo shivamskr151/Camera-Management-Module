@@ -1,3 +1,4 @@
+
 𝐂𝐚𝐦𝐞𝐫𝐚 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐖𝐞𝐛 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧
 
 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐒𝐭𝐚𝐜𝐤
@@ -263,4 +264,5 @@ export default tseslint.config({
     ...reactDom.configs.recommended.rules,
   },
 })
-
+```
+>>>>>>> e7ead16 (Masks/Zones UI)
