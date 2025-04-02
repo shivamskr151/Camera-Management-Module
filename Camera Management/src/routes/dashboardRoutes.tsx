@@ -4,6 +4,7 @@ import SettingsLayout from "@/pages/settings/SettingsLayout";
 import MasksAndZones from "@/pages/settings/MasksAndZones";
 import PTZCamera from "@/pages/settings/PTZCamera";
 import CameraConfiguration from "@/pages/settings/CameraConfiguration";
+import Activity from "@/pages/settings/Activity";
 import { Navigate } from "react-router-dom";
 
 export const dashboardRoutes: RouteObject[] = [
@@ -34,6 +35,10 @@ export const dashboardRoutes: RouteObject[] = [
       {
         path: "config",
         element: <CameraConfiguration />
+      },
+      {
+        path: "activity",
+        element: <Activity />
       }
     ]
   }

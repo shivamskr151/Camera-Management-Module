@@ -1,5 +1,5 @@
 import { createStore, persist } from 'easy-peasy';
-import { StoreModel, authModel, themeModel, cameraConfigModel } from './model';
+import { StoreModel, authModel, themeModel, cameraConfigModel, activityModel } from './model';
 
 // Create the store with the models
 const store = createStore<StoreModel>(
@@ -8,10 +8,11 @@ const store = createStore<StoreModel>(
       auth: authModel,
       theme: themeModel,
       cameraConfig: cameraConfigModel,
+      activity: activityModel,
     },
     {
       storage: 'localStorage',
-      allow: ['auth', 'theme', 'cameraConfig'], // Persist auth, theme and camera config in localStorage
+      allow: ['auth', 'theme', 'cameraConfig', 'activity'], // Persist auth, theme, camera config and activity in localStorage
     }
   )
 );

@@ -1,0 +1,173 @@
+{
+  "themes": {
+    "light": {
+      "name": "Light",
+      "colors": {
+        "background": "0 0% 100%",
+        "foreground": "240 10% 3.9%",
+        
+        "card": "0 0% 100%",
+        "card-foreground": "240 10% 3.9%",
+        
+        "popover": "0 0% 100%",
+        "popover-foreground": "240 10% 3.9%",
+        
+        "primary": "210 100% 50%",
+        "primary-foreground": "0 0% 98%",
+        
+        "secondary": "210 40% 96.1%",
+        "secondary-foreground": "210 40% 20%",
+        
+        "muted": "210 40% 96.1%",
+        "muted-foreground": "215.4 16.3% 46.9%",
+        
+        "accent": "210 40% 96.1%",
+        "accent-foreground": "210 40% 20%",
+        
+        "destructive": "0 84.2% 60.2%",
+        "destructive-foreground": "0 0% 98%",
+        
+        "border": "240 5.9% 90%",
+        "input": "240 5.9% 90%",
+        "ring": "210 100% 50%",
+        
+        "sidebar-background": "210 40% 98%",
+        "sidebar-foreground": "240 10% 3.9%",
+        "sidebar-primary": "210 100% 50%",
+        "sidebar-primary-foreground": "0 0% 98%",
+        "sidebar-accent": "210 40% 96.1%",
+        "sidebar-accent-foreground": "240 10% 3.9%",
+        "sidebar-border": "240 5.9% 90%",
+        "sidebar-ring": "210 100% 50%"
+      },
+      "radius": "0.75rem"
+    },
+    "dark": {
+      "name": "Dark",
+      "colors": {
+        "background": "240 10% 3.9%",
+        "foreground": "0 0% 98%",
+        
+        "card": "240 10% 3.9%",
+        "card-foreground": "0 0% 98%",
+        
+        "popover": "240 10% 3.9%",
+        "popover-foreground": "0 0% 98%",
+        
+        "primary": "210 100% 50%",
+        "primary-foreground": "0 0% 98%",
+        
+        "secondary": "240 3.7% 15.9%",
+        "secondary-foreground": "0 0% 98%",
+        
+        "muted": "240 3.7% 15.9%",
+        "muted-foreground": "240 5% 64.9%",
+        
+        "accent": "240 3.7% 15.9%",
+        "accent-foreground": "0 0% 98%",
+        
+        "destructive": "0 62.8% 30.6%",
+        "destructive-foreground": "0 0% 98%",
+        
+        "border": "240 3.7% 15.9%",
+        "input": "240 3.7% 15.9%",
+        "ring": "210 100% 50%",
+        
+        "sidebar-background": "240 10% 3.9%",
+        "sidebar-foreground": "0 0% 98%",
+        "sidebar-primary": "210 100% 50%",
+        "sidebar-primary-foreground": "0 0% 98%",
+        "sidebar-accent": "240 3.7% 15.9%",
+        "sidebar-accent-foreground": "0 0% 98%",
+        "sidebar-border": "240 3.7% 15.9%",
+        "sidebar-ring": "210 100% 50%"
+      },
+      "radius": "0.75rem"
+    },
+    "blue": {
+      "name": "Blue",
+      "colors": {
+        "background": "210 50% 98%",
+        "foreground": "240 10% 3.9%",
+        
+        "card": "0 0% 100%",
+        "card-foreground": "240 10% 3.9%",
+        
+        "popover": "0 0% 100%",
+        "popover-foreground": "240 10% 3.9%",
+        
+        "primary": "220 100% 50%",
+        "primary-foreground": "0 0% 98%",
+        
+        "secondary": "220 40% 96.1%",
+        "secondary-foreground": "220 40% 20%",
+        
+        "muted": "220 40% 96.1%",
+        "muted-foreground": "215.4 16.3% 46.9%",
+        
+        "accent": "220 40% 96.1%",
+        "accent-foreground": "220 40% 20%",
+        
+        "destructive": "0 84.2% 60.2%",
+        "destructive-foreground": "0 0% 98%",
+        
+        "border": "220 5.9% 90%",
+        "input": "220 5.9% 90%",
+        "ring": "220 100% 50%",
+        
+        "sidebar-background": "220 70% 50%",
+        "sidebar-foreground": "0 0% 100%",
+        "sidebar-primary": "220 100% 90%",
+        "sidebar-primary-foreground": "220 100% 10%",
+        "sidebar-accent": "220 40% 40%",
+        "sidebar-accent-foreground": "0 0% 100%",
+        "sidebar-border": "220 50% 60%",
+        "sidebar-ring": "220 100% 90%"
+      },
+      "radius": "0.5rem"
+    },
+    "green": {
+      "name": "Green",
+      "colors": {
+        "background": "#F5FFF5",
+        "foreground": "#111111",
+        
+        "card": "#FFFFFF",
+        "card-foreground": "#111111",
+        
+        "popover": "#FFFFFF",
+        "popover-foreground": "#111111",
+        
+        "primary": "#2D8A2D",
+        "primary-foreground": "#FFFFFF",
+        
+        "secondary": "#E6F7E6",
+        "secondary-foreground": "#1C4B1C",
+        
+        "muted": "#E6F7E6",
+        "muted-foreground": "#637963",
+        
+        "accent": "#D9F2D9",
+        "accent-foreground": "#1C4B1C",
+        
+        "destructive": "#E54D4D",
+        "destructive-foreground": "#FFFFFF",
+        
+        "border": "#DAEEDA",
+        "input": "#DAEEDA",
+        "ring": "#2D8A2D",
+        
+        "sidebar-background": "#2D8A2D",
+        "sidebar-foreground": "#FFFFFF",
+        "sidebar-primary": "#A1EDA1",
+        "sidebar-primary-foreground": "#0C2F0C",
+        "sidebar-accent": "#236723",
+        "sidebar-accent-foreground": "#FFFFFF",
+        "sidebar-border": "#3AAA3A",
+        "sidebar-ring": "#A1EDA1"
+      },
+      "radius": "0.5rem"
+    }
+  },
+  "activeTheme": "light"
+} 

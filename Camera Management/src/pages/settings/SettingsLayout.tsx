@@ -8,7 +8,8 @@ const SettingsLayout = () => {
   const tabs = [
     { name: 'Masks/Zones', href: '/settings/masks' },
     { name: 'PTZ Camera', href: '/settings/ptz' },
-    { name: 'Camera Configuration', href: '/settings/config' }
+    { name: 'Camera Configuration', href: '/settings/config' },
+    { name: 'Activity', href: '/settings/activity' }
   ];
 
   return (

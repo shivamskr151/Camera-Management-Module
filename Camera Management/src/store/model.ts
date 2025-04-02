@@ -2,6 +2,19 @@ import { Action, Computed, Thunk, action, computed, thunk } from 'easy-peasy';
 import { User, LoginCredentials, RegisterCredentials, ApiResponse, CameraConfig } from '@/lib/types';
 import { post } from '@/lib/axios';
 import { toast } from 'sonner';
+import { ActivityConfig } from './activities';
+
+// Activity Model
+export interface ActivityModel {
+  // State
+  activities: ActivityConfig[];
+  
+  // Actions
+  addActivity: Action<ActivityModel, ActivityConfig>;
+  updateActivity: Action<ActivityModel, ActivityConfig>;
+  deleteActivity: Action<ActivityModel, string>;
+  getActivityNames: Action<ActivityModel, string[]>;
+}
 
 // Camera Config Model
 export interface CameraConfigModel {
@@ -58,6 +71,7 @@ export interface StoreModel {
   auth: AuthModel;
   theme: ThemeModel;
   cameraConfig: CameraConfigModel;
+  activity: ActivityModel;
 }
 
 // Camera Config Model Implementation
@@ -277,5 +291,31 @@ export const themeModel: ThemeModel = {
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       actions.setTheme('dark');
     }
+  })
+};
+
+// Activity Model Implementation
+export const activityModel: ActivityModel = {
+  // State
+  activities: [],
+  
+  // Actions
+  addActivity: action((state, activity) => {
+    state.activities.push(activity);
+  }),
+  
+  updateActivity: action((state, activity) => {
+    const index = state.activities.findIndex(a => a.id === activity.id);
+    if (index !== -1) {
+      state.activities[index] = activity;
+    }
+  }),
+  
+  deleteActivity: action((state, id) => {
+    state.activities = state.activities.filter(a => a.id !== id);
+  }),
+  
+  getActivityNames: action((state) => {
+    return state.activities.map(activity => activity.name);
   })
 };
